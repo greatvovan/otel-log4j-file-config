@@ -7,5 +7,9 @@ public class Example {
         OpenTelemetrySdk openTelemetry = AutoConfiguredOpenTelemetrySdk.initialize().getOpenTelemetrySdk();
 
         // openTelemetry.shutdown();  // Fixes the problem
+
+        Runtime.getRuntime().addShutdownHook(new Thread(() -> {
+            openTelemetry.shutdown();
+        }));
     }
 }

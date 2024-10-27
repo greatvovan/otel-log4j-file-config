@@ -1,0 +1,3 @@
+Before launching:
+
+    export OTEL_LOGS_EXPORTER=none OTEL_METRICS_EXPORTER=none OTEL_TRACES_EXPORTER=none
