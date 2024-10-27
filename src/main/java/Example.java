@@ -13,5 +13,7 @@ public class Example {
         OpenTelemetryAppender.install(openTelemetry);
 
         logger.info("My test log");
+
+        openTelemetry.shutdown();
     }
 }
