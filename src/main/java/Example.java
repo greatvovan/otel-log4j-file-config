@@ -14,6 +14,10 @@ public class Example {
 
         logger.info("My test log");
 
-        openTelemetry.shutdown();
+        // openTelemetry.shutdown();
+
+        Runtime.getRuntime().addShutdownHook(new Thread(() -> {
+            openTelemetry.shutdown();
+        }));
     }
 }
