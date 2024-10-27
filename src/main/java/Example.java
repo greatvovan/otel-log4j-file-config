@@ -14,7 +14,7 @@ public class Example {
 
         logger.info("My test log");
 
-        // openTelemetry.shutdown();
+        // openTelemetry.shutdown();  // Fixes the problem
 
         Runtime.getRuntime().addShutdownHook(new Thread(() -> {
             openTelemetry.shutdown();
