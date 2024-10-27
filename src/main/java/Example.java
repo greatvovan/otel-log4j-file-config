@@ -6,6 +6,6 @@ public class Example {
     public static void main(String[] args) throws java.lang.InterruptedException {
         OpenTelemetrySdk openTelemetry = AutoConfiguredOpenTelemetrySdk.initialize().getOpenTelemetrySdk();
 
-        // openTelemetry.shutdown();  // Fixes tthe problem
+        // openTelemetry.shutdown();  // Fixes the problem
     }
 }
